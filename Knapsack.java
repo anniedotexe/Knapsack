@@ -2,8 +2,8 @@
  * Author:		Annie Wu
  * Project:		2
  * 
- * Class:		CS 331 – Design and Analysis of Algorithms
- * Instructor:	Tannaz R.Damavandi
+ * Class:		CS 331 â€“ Design and Analysis of Algorithms
+ * Instructor:		Tannaz R.Damavandi
  * 
  * Date:		1 June 2018
  * 
@@ -17,24 +17,24 @@ import java.util.*;
 public class Knapsack {
 	
 	private static String whichTask = "\nWhich task do you want to run?"
-										+ "\n 1. Fractional Knapsack"
-										+ "\n 2. 0/1 Knapsack"
-										+ "\n 3. Exit\n";
+						+ "\n 1. Fractional Knapsack"
+						+ "\n 2. 0/1 Knapsack"
+						+ "\n 3. Exit\n";
 	private static String fileNotFound = "\nError: The file could not be found.";
 	private static String error = "\nError: Invalid Input. Please enter a number.";
 	private static String exiting = "\nThe program has ended.";
 	
 	//list of objects in knapsack
 	private static ArrayList<KnapsackObject> objectList;
-    //max capacity of the knapsack
+ 	//max capacity of the knapsack
 	private static int maxCapacity;
-    //number of objects
+    	//number of objects
 	private static int nObjects;
 	
 	/**
 	 * This is the function readFile.
 	 * It will read the input file for...
-	 * 	- max capacity
+	 *  - max capacity
 	 *  - number of objects
 	 *  - each objects weight and profit
 	 */

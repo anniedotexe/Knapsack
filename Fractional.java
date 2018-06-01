@@ -2,13 +2,13 @@
  * Author:		Annie Wu
  * Project:		2
  * 
- * Class:		CS 331 – Design and Analysis of Algorithms
- * Instructor:	Tannaz R.Damavandi
+ * Class:		CS 331 â€“ Design and Analysis of Algorithms
+ * Instructor:		Tannaz R.Damavandi
  * 
  * Date:		1 June 2018
  * 
  * Purpose:		This program contains all functions needed to solve a
- * 				fractional knapsack.
+ * 			fractional knapsack.
  * 
  */
 
@@ -85,7 +85,6 @@ public class Fractional {
 	/**
 	 * This is the function sortByRatios.
 	 * It will sort the profit/weight ratios of the objects in non-increasing order.
-	 * @return 
 	 */
 	public static ArrayList<KnapsackObject> sortByRatios(ArrayList<KnapsackObject> objectList) {
 		

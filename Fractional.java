@@ -3,7 +3,7 @@
  * Project:		2
  * 
  * Class:		CS 331 – Design and Analysis of Algorithms
- * Instructor:		Tannaz R.Damavandi
+ * Instructor:		Tannaz R. Damavandi
  * 
  * Date:		1 June 2018
  * 

@@ -4,13 +4,13 @@ import java.util.ArrayList;
  * Author:		Annie Wu
  * Project:		2
  * 
- * Class:		CS 331 – Design and Analysis of Algorithms
- * Instructor:	Tannaz R.Damavandi
+ * Class:		CS 331 â€“ Design and Analysis of Algorithms
+ * Instructor:		Tannaz R. Damavandi
  * 
  * Date:		1 June 2018
  * 
  * Purpose:		This program contains all functions needed to solve a
- * 				0/1 knapsack.
+ * 			0/1 knapsack.
  * 
  */
 
@@ -69,12 +69,13 @@ public class ZeroOne {
 					//offset it by the difference of max capacity and the current weight
 					offset = matrixCapacity - currentWeight;
 					//get the maximum profit
-					matrix[matrixCapacity][i] = Math.max(matrix[matrixCapacity][i], matrix[offset][i - 1] + currentProfit);
+					matrix[matrixCapacity][i] = Math.max(matrix[matrixCapacity][i], 
+									     matrix[offset][i - 1] + currentProfit);
 				}
 			}
 		}
        
-		//reset total weight
+	//reset total weight
         currentWeight = 0;
         //reset profit
         currentProfit = 0;
@@ -114,8 +115,8 @@ public class ZeroOne {
         		System.out.print(objectList.get(i).toString());
         	}
         }
-		//print max profit
+	//print max profit
         System.out.println(maxProfit + currentProfit);
-		//System.out.print(currentWeight);
+	//System.out.print(currentWeight);
 	}
 }

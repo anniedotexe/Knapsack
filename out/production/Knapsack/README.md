@@ -1,20 +1,5 @@
 # Knapsack
-Given weights and values of n items, we need to put these items in a knapsack of a given capacity 
-to get the maximum total value in the knapsack. <br>
-
-In the <b>Fractional Knapsack Problem</b>, we can break items for maximizing the total value of knapsack. <br>
-
-In the <b>0/1 Knapsack Problem</b>, we are not allowed to break items. We either take <i>all or nothing</i>. <br>
-
-### The Program
-This program will read in an input file that contains the max capacity of the knapsack, 
-the number of objects, and each object's weight and profit. <br>
-
-The user can choose to:
-<li>Solve a fractional knapsack</li>
-<li>Solve a 0/1 knapsack</li>
-<li>Exit the program</li>
-
+This program will solve a fractional knapsack and a 0/1 knapsack.
 
 #### Sample Output
 ```

@@ -3,8 +3,7 @@
  * Project:		2
  * 
  * Class:		CS 331 – Design and Analysis of Algorithms
- * Instructor:		Tannaz R. Damavandi
- * 
+ *
  * Date:		1 June 2018
  * 
  * Purpose:		This program contains all user interactions with the program.
@@ -28,7 +27,7 @@ public class Knapsack {
 	private static ArrayList<KnapsackObject> objectList;
  	//max capacity of the knapsack
 	private static int maxCapacity;
-    	//number of objects
+	//number of objects
 	private static int nObjects;
 	
 	/**
@@ -36,7 +35,9 @@ public class Knapsack {
 	 * It will read the input file for...
 	 *  - max capacity
 	 *  - number of objects
-	 *  - each objects weight and profit
+	 *  - each object's weight and profit
+	 * @param fileName name of input file
+	 * @throws FileNotFoundException
 	 */
 	public static void readFile(String fileName) throws FileNotFoundException {
 		//new arraylist for list of objects
@@ -83,18 +84,15 @@ public class Knapsack {
 			String choice = kb.next();
 			//switch case for choice of task to run
 			switch (choice) {
-				// fractional
-				case "1":
+				case "1": // fractional
 					//call function to solve fractional knapsack
 					Fractional.solveFractional(objectList, maxCapacity);
 					break;
-				// 0/1
-				case "2":
+				case "2": // 0/1
 					//call function to solve 0/1 knapsack
 					ZeroOne.solveZeroOne(objectList, maxCapacity);
 					break;
-				// exit
-				case "3":
+				case "3": // exit
 					//set run to false to exit while loop
 					run = false;
 					//print exit message

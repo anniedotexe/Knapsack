@@ -1,18 +1,17 @@
-import java.util.ArrayList;
-
 /**
  * Author:		Annie Wu
  * Project:		2
  * 
  * Class:		CS 331 – Design and Analysis of Algorithms
- * Instructor:		Tannaz R. Damavandi
- * 
+ *
  * Date:		1 June 2018
  * 
  * Purpose:		This program contains all functions needed to solve a
  * 			0/1 knapsack.
  * 
  */
+
+import java.util.ArrayList;
 
 public class ZeroOne {
 
@@ -24,7 +23,13 @@ public class ZeroOne {
 	private static int currentProfit;
 	//boolean for if the object is in the final solution knapsack
 	private static boolean[] finalSolution;
-	
+
+	/**
+	 * This is the function solveZeroOne.
+	 * The purpose is to solve a 0/1 knapsack.
+	 * @param objectList
+	 * @param maxCapacity
+	 */
 	public static void solveZeroOne(ArrayList<KnapsackObject> objectList, int maxCapacity) {
 		//width of the matrix
 		int width = maxCapacity +1;
@@ -75,7 +80,7 @@ public class ZeroOne {
 			}
 		}
        
-	//reset total weight
+		//reset total weight
         currentWeight = 0;
         //reset profit
         currentProfit = 0;
@@ -115,8 +120,8 @@ public class ZeroOne {
         		System.out.print(objectList.get(i).toString());
         	}
         }
-	//print max profit
+		//print max profit
         System.out.println(maxProfit + currentProfit);
-	//System.out.print(currentWeight);
+		//System.out.print(currentWeight);
 	}
 }

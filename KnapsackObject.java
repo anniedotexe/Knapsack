@@ -3,8 +3,7 @@
  * Project:		2
  * 
  * Class:		CS 331 – Design and Analysis of Algorithms
- * Instructor:		Tannaz R. Damavandi
- * 
+ *
  * Date:		1 June 2018
  * 
  * Purpose:		This is the class that contains each object and their 
@@ -21,6 +20,9 @@ public class KnapsackObject {
 	/**
 	 * This is the constructor to create an object with its 
 	 * object number, weight, and profit.
+	 * @param o object
+	 * @param w weight
+	 * @param p nprofit
 	 */
 	public KnapsackObject(int o, int w, int p) {
 		this.object = o;
@@ -31,6 +33,7 @@ public class KnapsackObject {
 	/**
 	 * This is the function toString.
 	 * It will print the object with its weight and profit in this format.
+	 * @return formatted string
 	 */
 	public String toString() {
         return "\nObject: " + this.object + "\tWeight: " + 
